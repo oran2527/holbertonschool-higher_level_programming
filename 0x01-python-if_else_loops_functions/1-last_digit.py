@@ -6,7 +6,7 @@ if number > 0:
 else:
 	l = abs(number) % 10 * -1
 
-print("Last digit of {:d} is {:d} ".format(number, l),end="");
+print("Last digit of {:d} is {:d}".format(number, l),end=" ");
 if l > 5:
 	print("and is greater than 5")
 elif l < 6 and l != 0:
