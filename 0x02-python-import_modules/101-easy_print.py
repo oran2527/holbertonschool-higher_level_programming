@@ -1,3 +1,2 @@
-#!/bin/bash
-python -c "print 'echo \#pythoniscool'" | bash
-
+#!/usr/bin/python3
+import info101
