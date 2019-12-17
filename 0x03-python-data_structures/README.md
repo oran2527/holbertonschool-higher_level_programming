@@ -1,4 +1,4 @@
-0x03. Python - Data Structures: Lists, Tuples
+## 0x03. Python - Data Structures: Lists, Tuples
 
 Orlando Gomez Lopez
 
@@ -8,7 +8,7 @@ Cohort 10
 
 17 december 2019
 
-Tasks
+# Tasks
 
 0. Print a list of integers mandatory
 Write a function that prints all integers of a list.
