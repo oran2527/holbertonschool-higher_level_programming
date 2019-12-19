@@ -34,6 +34,7 @@ Prototype: def square_matrix_simple(matrix=[]):
 	You are not allowed to import any module
 	You are allowed to use regular loops, map, etc.
 	guillaume@ubuntu:~/0x04$ cat 0-main.py
+
 #!/usr/bin/python3
 	square_matrix_simple = __import__('0-square_matrix_simple').square_matrix_simple
 
@@ -57,7 +58,7 @@ Prototype: def square_matrix_simple(matrix=[]):
 	Directory: 0x04-python-more_data_structures
 	File: 0-square_matrix_simple.py
 
-	1. Search and replace mandatory
+1. Search and replace mandatory
 	Write a function that replaces all occurrences of an element by another in a new list.
 
 	Prototype: def search_replace(my_list, search, replace):
@@ -85,12 +86,13 @@ Prototype: def square_matrix_simple(matrix=[]):
 	Directory: 0x04-python-more_data_structures
 	File: 1-search_replace.py
 
-	2. Unique addition mandatory
+2. Unique addition mandatory
 	Write a function that adds all unique integers in a list (only once for each integer).
 
 	Prototype: def uniq_add(my_list=[]):
 		You are not allowed to import any module
 		guillaume@ubuntu:~/0x04$ cat 2-main.py
+
 #!/usr/bin/python3
 		uniq_add = __import__('2-uniq_add').uniq_add
 
@@ -107,12 +109,13 @@ Prototype: def square_matrix_simple(matrix=[]):
 	Directory: 0x04-python-more_data_structures
 	File: 2-uniq_add.py
 
-	3. Present in both mandatory
+3. Present in both mandatory
 	Write a function that returns a set of common elements in two sets.
 
 	Prototype: def common_elements(set_1, set_2):
 		You are not allowed to import any module
 		guillaume@ubuntu:~/0x04$ cat 3-main.py
+
 #!/usr/bin/python3
 		common_elements = __import__('3-common_elements').common_elements
 
@@ -130,12 +133,13 @@ Prototype: def square_matrix_simple(matrix=[]):
 	Directory: 0x04-python-more_data_structures
 	File: 3-common_elements.py
 
-	4. Only differents mandatory
+4. Only differents mandatory
 	Write a function that returns a set of all elements present in only one set.
 
 	Prototype: def only_diff_elements(set_1, set_2):
 		You are not allowed to import any module
 		guillaume@ubuntu:~/0x04$ cat 4-main.py
+
 #!/usr/bin/python3
 		only_diff_elements = __import__('4-only_diff_elements').only_diff_elements
 
@@ -153,12 +157,13 @@ Prototype: def square_matrix_simple(matrix=[]):
 	Directory: 0x04-python-more_data_structures
 	File: 4-only_diff_elements.py
 
-	5. Number of keys mandatory
+5. Number of keys mandatory
 	Write a function that returns the number of keys in a dictionary.
 
 	Prototype: def number_keys(a_dictionary):
 		You are not allowed to import any module
 		guillaume@ubuntu:~/0x04$ cat 5-main.py
+
 #!/usr/bin/python3
 		number_keys = __import__('5-number_keys').number_keys
 
@@ -175,7 +180,7 @@ Prototype: def square_matrix_simple(matrix=[]):
 	Directory: 0x04-python-more_data_structures
 	File: 5-number_keys.py
 
-	6. Print sorted dictionary mandatory
+6. Print sorted dictionary mandatory
 	Write a function that prints a dictionary by ordered keys.
 
 	Prototype: def print_sorted_dictionary(a_dictionary):
@@ -185,6 +190,7 @@ Prototype: def square_matrix_simple(matrix=[]):
 		Dictionary values can have any type
 		You are not allowed to import any module
 		guillaume@ubuntu:~/0x04$ cat 6-main.py
+
 #!/usr/bin/python3
 		print_sorted_dictionary = __import__('6-print_sorted_dictionary').print_sorted_dictionary
 
@@ -203,7 +209,7 @@ Prototype: def square_matrix_simple(matrix=[]):
 	Directory: 0x04-python-more_data_structures
 	File: 6-print_sorted_dictionary.py
 
-	7. Update dictionary mandatory
+7. Update dictionary mandatory
 	Write a function that replaces or adds key/value in a dictionary.
 
 	Prototype: def update_dictionary(a_dictionary, key, value):
@@ -213,6 +219,7 @@ Prototype: def square_matrix_simple(matrix=[]):
 		If a key doesnt exist in the dictionary, it will be created
 		You are not allowed to import any module
 		guillaume@ubuntu:~/0x04$ cat 7-main.py
+
 #!/usr/bin/python3
 		update_dictionary = __import__('7-update_dictionary').update_dictionary
 		print_sorted_dictionary = __import__('6-print_sorted_dictionary').print_sorted_dictionary
@@ -257,7 +264,7 @@ Prototype: def square_matrix_simple(matrix=[]):
 	Directory: 0x04-python-more_data_structures
 	File: 7-update_dictionary.py
 
-	8. Simple delete by key mandatory
+8. Simple delete by key mandatory
 	Write a function that deletes a key in a dictionary.
 
 	Prototype: def simple_delete(a_dictionary, key=""):
@@ -265,6 +272,7 @@ Prototype: def square_matrix_simple(matrix=[]):
 	If a key doesnt exist, the dictionary wont change
 	You are not allowed to import any module
 	guillaume@ubuntu:~/0x04$ cat 8-main.py
+
 #!/usr/bin/python3
 	simple_delete = __import__('8-simple_delete').simple_delete
 	print_sorted_dictionary = \
@@ -307,7 +315,8 @@ Prototype: def square_matrix_simple(matrix=[]):
 	Directory: 0x04-python-more_data_structures
 	File: 8-simple_delete.py
 
-	9. Multiply by 2 mandatory
+
+9. Multiply by 2 mandatory
 	Write a function that returns a new dictionary with all values multiplied by 2
 
 	Prototype: def multiply_by_2(a_dictionary):
@@ -315,6 +324,7 @@ Prototype: def square_matrix_simple(matrix=[]):
 		Returns a new dictionary
 		You are not allowed to import any module
 		guillaume@ubuntu:~/0x04$ cat 9-main.py
+
 #!/usr/bin/python3
 		multiply_by_2 = __import__('9-multiply_by_2').multiply_by_2
 		print_sorted_dictionary = \
@@ -345,7 +355,7 @@ Prototype: def square_matrix_simple(matrix=[]):
 	Directory: 0x04-python-more_data_structures
 	File: 9-multiply_by_2.py
 
-	10. Best score mandatory
+10. Best score mandatory
 	Write a function that returns a key with the biggest integer value.
 
 	Prototype: def best_score(a_dictionary):
@@ -354,6 +364,7 @@ Prototype: def square_matrix_simple(matrix=[]):
 		You can assume all students have a different score
 		You are not allowed to import any module
 		guillaume@ubuntu:~/0x04$ cat 10-main.py
+
 #!/usr/bin/python3
 		best_score = __import__('10-best_score').best_score
 
@@ -374,7 +385,7 @@ Prototype: def square_matrix_simple(matrix=[]):
 	Directory: 0x04-python-more_data_structures
 	File: 10-best_score.py
 
-	11. Multiply by using map mandatory
+11. Multiply by using map mandatory
 	Write a function that returns a list with all values multiplied by a number without using any loops.
 
 	Prototype: def mutiply_list_map(my_list=[], number=0):
@@ -386,6 +397,7 @@ Prototype: def square_matrix_simple(matrix=[]):
 		You have to use map
 		Your file should be max 3 lines
 		guillaume@ubuntu:~/0x04$ cat 11-main.py
+
 #!/usr/bin/python3
 		mutiply_list_map = __import__('11-mutiply_list_map').mutiply_list_map
 
@@ -404,7 +416,7 @@ Prototype: def square_matrix_simple(matrix=[]):
 	Directory: 0x04-python-more_data_structures
 	File: 11-mutiply_list_map.py
 
-	12. Roman to Integer mandatory
+12. Roman to Integer mandatory
 	Technical interview preparation:
 
 	You are not allowed to google anything
@@ -415,6 +427,7 @@ Prototype: def square_matrix_simple(matrix=[]):
 							  def roman_to_int(roman_string) must return an integer
 							  If the roman_string is not a string or None, return 0
 							  guillaume@ubuntu:~/0x04$ cat 12-main.py
+
 #!/usr/bin/python3
 							  """ Roman to Integer test file
 							  """
@@ -448,13 +461,14 @@ Prototype: def square_matrix_simple(matrix=[]):
 							  Directory: 0x04-python-more_data_structures
 							  File: 12-roman_to_int.py
 
-							  13. Weighted average! #advanced
+13. Weighted average! #advanced
 							  Write a function that returns the weighted average of all integers tuple (<score>, <weight>)
 
 	Prototype: def weight_average(my_list=[]):
 		Returns 0 if the list is empty
 		You are not allowed to import any module
 		guillaume@ubuntu:~/0x04$ cat 100-main.py
+
 #!/usr/bin/python3
 		weight_average = __import__('100-weight_average').weight_average
 
@@ -472,7 +486,7 @@ Prototype: def square_matrix_simple(matrix=[]):
 	Directory: 0x04-python-more_data_structures
 	File: 100-weight_average.py
 
-	14. Squared by using map #advanced
+14. Squared by using map #advanced
 	Write a function that computes the square value of all integers of a matrix using map
 
 	Prototype: def square_matrix_map(matrix=[]):
@@ -486,6 +500,7 @@ Prototype: def square_matrix_simple(matrix=[]):
 		You are not allowed to use for or while
 		Your file should be max 3 lines
 		guillaume@ubuntu:~/0x04$ cat 101-main.py
+
 #!/usr/bin/python3
 		square_matrix_map = \
 				        __import__('101-square_matrix_map').square_matrix_map
@@ -510,7 +525,7 @@ Prototype: def square_matrix_simple(matrix=[]):
 	Directory: 0x04-python-more_data_structures
 	File: 101-square_matrix_map.py
 
-	15. Delete by value #advanced
+15. Delete by value #advanced
 	Write a function that deletes keys with a specific value in a dictionary.
 
 	Prototype: def complex_delete(a_dictionary, value):
@@ -518,6 +533,7 @@ Prototype: def square_matrix_simple(matrix=[]):
 		All keys having the searched value have to be deleted
 		You are not allowed to import any module
 		guillaume@ubuntu:~/0x04$ cat 102-main.py
+
 #!/usr/bin/python3
 		complex_delete = __import__('102-complex_delete').complex_delete
 		print_sorted_dictionary = \
@@ -556,7 +572,7 @@ Prototype: def square_matrix_simple(matrix=[]):
 	Directory: 0x04-python-more_data_structures
 	File: 102-complex_delete.py
 
-	16. CPython #1: PyBytesObject #advanced
+16. CPython #1: PyBytesObject #advanced
 	Create two C functions that print some basic info about Python lists and Python bytes objects.
 
 
