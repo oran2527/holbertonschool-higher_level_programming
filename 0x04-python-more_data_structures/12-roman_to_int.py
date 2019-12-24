@@ -21,9 +21,13 @@ def roman_to_int(roman_string):
     for i in roman_string:
         if i.isdigit() is True:
             return 0
-        else:
+        if i == 'I' or i == 'V' or i == 'X' or i == 'L\
+' or i == 'C' or i == 'D' or i == 'M':
             new.append(roman(i))
+        else:
+            return 0
     for i in range(0, len(new)):
+        flag = 0
         if i < (len(new) - 1):
             if (new[i + 1] == 5 or new[i + 1] == 10 and flag == 0):
                 if new[i] == 1 and new[i] < new[i + 1]:
