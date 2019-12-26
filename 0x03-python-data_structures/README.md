@@ -2,15 +2,18 @@
 
 Orlando Gomez Lopez
 
-Holberton Cali Colombia
+Holberton
 
 Cohort 10
+
+Cali Colombia
 
 17 december 2019
 
 # Tasks
 
-0. Print a list of integers mandatory
+# 0. Print a list of integers mandatory
+
 Write a function that prints all integers of a list.
 
 Prototype: def print_list_integer(my_list=[]):
@@ -39,8 +42,9 @@ print_list_integer(my_list)
 	Directory: 0x03-python-data_structures
 	File: 0-print_list_integer.py
 
-	1. Secure access to an element in a list mandatory
-	Write a function that retrieves an element from a list like in C.
+# 1. Secure access to an element in a list mandatory
+
+Write a function that retrieves an element from a list like in C.
 
 	Prototype: def element_at(my_list, idx):
 		If idx is negative, the function should return None
@@ -94,8 +98,9 @@ print(my_list)
 	Directory: 0x03-python-data_structures
 	File: 2-replace_in_list.py
 
-	3. Print a list of integers... in reverse! mandatory
-	Write a function that prints all integers of a list, in reverse order.
+# 3. Print a list of integers... in reverse! mandatory
+
+Write a function that prints all integers of a list, in reverse order.
 
 	Prototype: def print_reversed_list_integer(my_list=[]):
 		Format: one integer per line. See example
@@ -123,8 +128,9 @@ print_reversed_list_integer(my_list)
 	Directory: 0x03-python-data_structures
 	File: 3-print_reversed_list_integer.py
 
-	4. Replace in a copy mandatory
-	Write a function that replaces an element in a list at a specific position without modifying the original list (like in C).
+# 4. Replace in a copy mandatory
+
+Write a function that replaces an element in a list at a specific position without modifying the original list (like in C).
 
 	Prototype: def new_in_list(my_list, idx, element):
 		If idx is negative, the function should return a copy of the original list
@@ -153,8 +159,9 @@ print(my_list)
 	Directory: 0x03-python-data_structures
 	File: 4-new_in_list.py
 
-	5. Can you C me now? mandatory
-	Write a function that removes all characters c and C from a string.
+# 5. Can you C me now? mandatory
+
+Write a function that removes all characters c and C from a string.
 
 	Prototype: def no_c(my_string):
 		The function should return the new string
@@ -179,8 +186,9 @@ print(my_list)
 	 Directory: 0x03-python-data_structures
 	 File: 5-no_c.py
 
-	 6. Lists of lists = Matrix mandatory
-	 Write a function that prints a matrix of integers.
+# 6. Lists of lists = Matrix mandatory
+
+Write a function that prints a matrix of integers.
 
 	 Prototype: def print_matrix_integer(matrix=[[]]):
 		 Format: see example
@@ -215,8 +223,9 @@ print_matrix_integer()
 	Directory: 0x03-python-data_structures
 	File: 6-print_matrix_integer.py
 
-	7. Tuples addition mandatory
-	Write a function that adds 2 tuples.
+# 7. Tuples addition mandatory
+
+Write a function that adds 2 tuples.
 
 	Prototype: def add_tuple(tuple_a=(), tuple_b=()):
 		Returns a tuple with 2 integers:
@@ -249,8 +258,9 @@ print(add_tuple(tuple_a, ()))
 	Directory: 0x03-python-data_structures
 	File: 7-add_tuple.py
 
-	8. More returns! mandatory
-	Write a function that returns a tuple with the length of a string and its first character.
+# 8. More returns! mandatory
+
+Write a function that returns a tuple with the length of a string and its first character.
 
 	Prototype: def multiple_returns(sentence):
 		If the sentence is empty, the first character should be equal to None
@@ -272,8 +282,9 @@ length, first = multiple_returns(sentence)
 	Directory: 0x03-python-data_structures
 	File: 8-multiple_returns.py
 
-	9. Find the max mandatory
-	Write a function that finds the biggest integer of a list.
+# 9. Find the max mandatory
+
+Write a function that finds the biggest integer of a list.
 
 	Prototype: def max_integer(my_list=[]):
 		If the list is empty, return None
@@ -297,8 +308,9 @@ max_value = max_integer(my_list)
 	Directory: 0x03-python-data_structures
 	File: 9-max_integer.py
 
-	10. Only by 2 mandatory
-	Write a function that finds all multiples of 2 in a list.
+# 10. Only by 2 mandatory
+
+Write a function that finds all multiples of 2 in a list.
 
 	Prototype: def divisible_by_2(my_list=[]):
 		Return a new list with True or False, depending on whether the integer at the same position in the original list is a multiple of 2
@@ -331,8 +343,9 @@ list_result = divisible_by_2(my_list)
 		Directory: 0x03-python-data_structures
 		File: 10-divisible_by_2.py
 
-		11. Delete at mandatory
-		Write a function that deletes the item at a specific position in a list.
+# 11. Delete at mandatory
+		
+Write a function that deletes the item at a specific position in a list.
 
 		Prototype: def delete_at(my_list=[], idx=0):
 	If idx is negative or out of range, nothing change (returns the same list)
@@ -358,8 +371,9 @@ print(my_list)
 	Directory: 0x03-python-data_structures
 	File: 11-delete_at.py
 
-	12. Switch mandatory
-	Complete the source code in order to switch value of a and b
+# 12. Switch mandatory
+
+Complete the source code in order to switch value of a and b
 
 	You can find the source code here
 Your code should be inserted where the comment is (line 4)
@@ -375,8 +389,9 @@ Your code should be inserted where the comment is (line 4)
 	Directory: 0x03-python-data_structures
 	File: 12-switch.py
 
-	13. Linked list palindrome mandatory
-	Technical interview preparation:
+# 13. Linked list palindrome mandatory
+
+Technical interview preparation:
 
 	You are not allowed to google anything
 	Whiteboard first
@@ -544,7 +559,8 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: 0x03-python-data_structures
 File: 13-is_palindrome.c, lists.h
 
-14. CPython #0: Python lists #advanced
+# 14. CPython #0: Python lists #advanced
+
 CPython is the reference implementation of the Python programming language. Written in C, CPython is the default and most widely used implementation of the language.
 Since we now know a bit of C, we can look at what is happening under the hood of Python. Lets have fun with Python and C, and lets look at what makes Python so easy to use.
 
