@@ -1,7 +1,11 @@
-Python - if/else, loops, functions
+## Python - if/else, loops, functions
+
 Orlando Gomez
-Holberton Cohort 10
-10 december 2019Python - if/else, loops, functions
-Orlando Gomez
-Holberton Cohort 10
+
+Holberton
+
+Cohort 10
+
+Cali Colombia
+
 10 december 2019
