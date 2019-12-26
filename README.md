@@ -1,3 +1,11 @@
-Python level
-Created by Orlando Gomez
+## Python level
+
+Orlando Gomez
+
+Holberton
+
+Cohort 10
+
+Cali Colombia
+
 10 december 2019
