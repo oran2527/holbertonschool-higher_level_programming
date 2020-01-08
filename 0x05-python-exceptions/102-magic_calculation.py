@@ -3,11 +3,11 @@ def magic_calculation(a, b):
     result = 0
     for i in range(1, 3):
         try:
-            if a > i:
+            if i > a:
                 raise Exception('Too far')
-	    elif:
-                result = result + i / b ** a
-	    else:
-                result = a + b
-        finally:
-            return result		
+            else:
+                result = result + i / a ** b
+
+            result = b + a
+
+    return result
