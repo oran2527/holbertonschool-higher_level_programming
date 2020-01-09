@@ -2,5 +2,4 @@
 class Square:
     """Square class."""
     def __init__(self):
-        """Init."""
-        pass
+        """Init."""       
