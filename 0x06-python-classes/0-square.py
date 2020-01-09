@@ -1,9 +1,7 @@
 #!/usr/bin/python3
-"""script bash."""
+"""python script."""
 
 
 class Square:
     """Square class."""
-    def __init__(self):
-        """Init."""
-        pass
+    pass
