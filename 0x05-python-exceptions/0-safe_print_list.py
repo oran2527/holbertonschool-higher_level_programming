@@ -1,13 +1,10 @@
 #!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
-    try:
-        for x in range(0, x):
-            print(my_list[x], end="")
-        print("\n", end="")
-        return x + 1
-    except:
-        i = 0
-        print("\n", end="")
-        for x in my_list:
-            i = i + 1
-        return i
+    sub = 0
+    for j in range(0, x):
+        try:
+            print(my_list[j], end="")            
+        except:
+            sub = sub - 1
+    print("\n", end="")
+    return x + sub
