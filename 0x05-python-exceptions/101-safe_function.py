@@ -7,4 +7,4 @@ def safe_function(fct, *args):
         return fct(args[0], args[1])
     except Exception as err:
         print("Exception: " + err.args[0], file=sys.stderr)
-        return None  
+        return None
