@@ -13,11 +13,11 @@ def matrix_divided(matrix, div):
     new = []
     new.append([])
     new.append([])
-    flag = 0
 
     if div is 0:
         raise ZeroDivisionError("division by zero")
-        flag = 1
+    if type(div) is not int and type(div) is not float:
+        raise TypeError("div must be a number")
     for i in range(0, len(matrix)):
         try:
             len(matrix[i])
@@ -28,4 +28,7 @@ def matrix_divided(matrix, div):
             if i > 0 and len(matrix[i]) != len(matrix[i - 1]):
                 raise TypeError("Each row of the matrix\
  must have the same size")
-            print(matrix[i][j])
+    for i in range(0, len(matrix)):
+        for j in range(0, len(matrix[i])):
+            new[i].append(round(matrix[i][j] / div, 2))
+    return new
