@@ -20,7 +20,9 @@ matrix_divided = __import__('2-matrix_divided').matrix_divided
 
 """print(matrix_divided(matrix, 'a'))"""
 
-matrix = [[]]
+""""matrix = [[]]"""
+
+matrix = None
 
 print(matrix_divided(matrix, 3))
 print(matrix)

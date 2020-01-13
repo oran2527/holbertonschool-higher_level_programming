@@ -4,6 +4,7 @@ def text_indentation(text):
         raise TypeError("text must be a string")
     if type(text) is str:
         for x in range(0, len(text)):
-            print(text[x], end="")
+            if text[x] is not " ":
+                print(text[x], end="")
             if text[x] is "." or text[x] is "?" or text[x] is ":":
-                print("\n")
+                print("\n")	   

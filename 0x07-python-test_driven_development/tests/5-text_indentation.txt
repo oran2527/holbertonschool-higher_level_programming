@@ -6,3 +6,21 @@ hola
 >>> text_indentation(1)
 Traceback (most recent call last):
 TypeError: text must be a string
+
+>>> text_indentation("Hola.Soy?Orlando")
+Hola.
+<BLANKLINE>
+Soy?
+<BLANKLINE>
+Orlando
+
+>>> text_indentation("  Hola.  Soy ?  Orlando ")
+Hola.
+<BLANKLINE>
+Soy?
+<BLANKLINE>
+Orlando
+
+>>> text_indentation()
+Traceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'
