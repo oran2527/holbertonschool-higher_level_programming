@@ -13,21 +13,26 @@ def matrix_divided(matrix, div):
     new = []
     new.append([])
     new.append([])
+    i = 0
 
     if div is 0:
         raise ZeroDivisionError("division by zero")
     if type(div) is not int and type(div) is not float:
         raise TypeError("div must be a number")
-    for i in range(0, len(matrix)):
-        try:
-            len(matrix[i])
-        except:
-           raise TypeError("matrix must be a matrix\
+    try:
+        i = matrix[1][0]
+    except:
+        raise TypeError("matrix must be a matrix\
  (list of lists) of integers/floats")
-        for j in range(0, len(matrix[i])): 
-            if i > 0 and len(matrix[i]) != len(matrix[i - 1]):
+    for i in range(0, len(matrix)):
+        for j in range(0, len(matrix[i])):
+            if i > 0 and len(matrix[i]) is not len(matrix[i - 1]):
                 raise TypeError("Each row of the matrix\
  must have the same size")
+            if type(matrix[i][j]) is not int:
+                if type(matrix[i][j]) is not float:
+                    raise TypeError("matrix must be a matrix\
+ (list of lists) of integers/floats")
     for i in range(0, len(matrix)):
         for j in range(0, len(matrix[i])):
             new[i].append(round(matrix[i][j] / div, 2))
