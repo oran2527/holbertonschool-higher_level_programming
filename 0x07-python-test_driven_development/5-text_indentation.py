@@ -7,4 +7,4 @@ def text_indentation(text):
             if text[x] is not " ":
                 print(text[x], end="")
             if text[x] is "." or text[x] is "?" or text[x] is ":":
-                print("\n")	   
+                print("\n")
