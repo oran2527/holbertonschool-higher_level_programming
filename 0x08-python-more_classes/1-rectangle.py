@@ -5,10 +5,12 @@ class Rectangle:
         """__init__ function. call setter"""
         self.width = width
         self.height = height
+
     @property
     def width(self):
         """width function getter."""
         return self.__width
+
     @width.setter
     def width(self, value):
         """width function setter."""
@@ -17,10 +19,12 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
+
     @property
     def height(self):
         """height function getter."""
         return self.__height
+
     @height.setter
     def height(self, value):
         """height function setter."""
