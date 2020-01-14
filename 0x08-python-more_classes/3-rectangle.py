@@ -48,6 +48,8 @@ class Rectangle:
     def __str__(self):
         """__str___ function."""
         string = ""
+        if self.__width is 0 or self.__height is 0:
+            return string
         for i in range(0, self.__height):
             for j in range(0, self.__width):
                 string = string + '#'
