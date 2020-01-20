@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Module point 1"""
+
+
 class MyList(list):
     """Mylist class."""
 
