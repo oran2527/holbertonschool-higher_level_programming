@@ -7,6 +7,6 @@
     
 def read_file(filename=""):
     """read_file function"""
-    f = open(filename, 'r')
-    f.read()
+    with open(filename, 'r') as f:
+        print(f.read(), end="")
     
