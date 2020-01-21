@@ -9,4 +9,4 @@ class MyInt(int):
     """MyInt class."""
     def __repr__(self):
         """repr function."""
-        return 'False' if self==1 else 'True'    	    
+        return 'False' if self == 1 else 'True'
