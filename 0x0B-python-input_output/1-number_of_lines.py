@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Module point 0
+""" Module point 1
 
     Description: Count the numbers of lines of a file
     Return: number lines"""
