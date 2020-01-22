@@ -10,6 +10,5 @@ def number_of_lines(filename=""):
     cont = 1
     with open(filename, 'r') as f:
         for line in f:
-            if line.strip():
-                cont += 1
+            cont += 1
     return cont
