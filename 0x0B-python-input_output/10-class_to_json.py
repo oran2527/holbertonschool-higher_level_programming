@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-import json
-""" Module point 10
+"""
+Python class-to-JSON
 """
 
 
 def class_to_json(obj):
-    """class_to_json function"""
+    """Return the dictionary"""
     return obj.__dict__
