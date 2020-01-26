@@ -106,16 +106,29 @@ class Rectangle(Base):
         return "[Rectangle] ({}) {}/{} - {}/{}>\
 ".format(self.id, self.__x, self.__y, self.__width, self.__height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """update function"""
-        for i in range(0, len(args)):
-            if i == 0:
-                super().__init__(args[i])
-            if i == 1:
-                self.width = args[i]
-            if i == 2:
-                self.height = args[i]
-            if i == 3:
-                self.x = args[i]
-            if i == 4:
-                self.y = args[i]
+        if args:
+            for i in range(0, len(args)):
+                if i == 0:
+                    super().__init__(args[i])
+                if i == 1:
+                    self.width = args[i]
+                if i == 2:
+                    self.height = args[i]
+                if i == 3:
+                    self.x = args[i]
+                if i == 4:
+                    self.y = args[i]
+        if not args:
+            for key, value in kwargs.items():
+                if key == "width":
+                    self.width = value
+                if key == "height":
+                    self.height = value
+                if key == "x":
+                    self.x = value
+                if key == "y":
+                    self.y = value
+                if key == "id":
+                    super().__init__(value)
