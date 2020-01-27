@@ -33,3 +33,12 @@ class Base:
                 content += [list_objs[i].to_dictionary()]
         with open(cls.__name__ + ".json", 'w') as f:
             f.write(cls.to_json_string(content))
+
+    @staticmethod	    
+    def from_json_string(json_string):
+        """from_json_string function"""
+        if json_string is None or not json_string:
+            return []
+        else:
+            return json.loads(json_string)
+        	    
