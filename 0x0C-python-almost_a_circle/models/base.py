@@ -21,5 +21,5 @@ class Base:
         if list_dictionaries is None or not list_dictionaries:
             return []
         else:
-            new_j = json.dumps(list_dictionaries, sort_keys=True)
+            new_j = json.dumps(list_dictionaries)
             return new_j
