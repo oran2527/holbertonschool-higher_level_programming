@@ -132,3 +132,8 @@ class Rectangle(Base):
                     self.y = value
                 if key == "id":
                     super().__init__(value)
+
+    def to_dictionary(self):
+        """to_dictionary function"""
+        return {'id': self.id, 'width': self.width, 'height\
+': self.height, 'x': self.x, 'y': self.y}
