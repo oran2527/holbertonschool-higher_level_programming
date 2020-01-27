@@ -1,4 +1,4 @@
-#!/user/bin/python3
+#!/usr/bin/python3
 """ module point 2 rectangle class """
 from models.base import Base
 

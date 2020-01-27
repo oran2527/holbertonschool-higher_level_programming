@@ -1,4 +1,4 @@
-#!/user/bin/python3
+#!/usr/bin/python3
 """ module point 10 square class """
 from models.rectangle import Rectangle
 
