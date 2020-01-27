@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-import json
 """ module point 1 base class """
+import json
 
 
 class Base:
