@@ -63,3 +63,8 @@ class Square(Rectangle):
                     self.id = value
                 if key == "size":
                     self.size = value
+
+    def to_dictionary(self):
+        """to_dictionary function"""
+        return {'id': self.id, 'size': self.size, 'x\
+': self.x, 'y': self.y}
