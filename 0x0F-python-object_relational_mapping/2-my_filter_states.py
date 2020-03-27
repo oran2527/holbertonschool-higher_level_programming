@@ -12,7 +12,15 @@ if __name__ == "__main__":
     db_connection = MySQLdb.Connect(host="localhost\
 ", port=3306, user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
     cursor = db_connection.cursor()
-    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id;")
+    cursorstr = """
+SELECT * 
+FROM states 
+WHERE states.name = '{value}'
+ORDER BY states.id;
+"""
+    value = str(sys.argv[4])
+    cursorstr = cursorstr.format(value=value)
+    cursor.execute(cursorstr)
     myresult = cursor.fetchall()
     for x in myresult:
         print(x)
