@@ -21,7 +21,7 @@ ORDER BY cities.id;
 """
     value = str(sys.argv[4])
     cursorstr = cursorstr.format(value=value)
-    cursor.execute(cursorstr, (name,))
+    cursor.execute(cursorstr, (value,))
     myresult = cursor.fetchall()
     for y in range(0, len(myresult)):
         w = str(myresult[y])
