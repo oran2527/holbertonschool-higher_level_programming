@@ -20,6 +20,6 @@ if __name__ == "__main__":
     newstate = State(name='Louisiana')
     ses.add(newstate)
     ses.commit()
-    records = ses.query(State).order_by(desc(State.id)).first()
+    records = ses.query(State).order_by(desc(id)).first()
     if records:
         print("{}".format(records.id))
