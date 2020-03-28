@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 '''Task 11 insert a new state'''
 from model_state import Base, State
-from sqlalchemy import (create_engine)
+from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.orm import desc
 import sys
@@ -19,7 +19,7 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     newstate = State(name='Louisiana')
     ses.add(newstate)
-    ses.commit()
     records = ses.query(State).order_by(desc(id)).first()
     if records:
         print("{}".format(records.id))
+    ses.commit()
