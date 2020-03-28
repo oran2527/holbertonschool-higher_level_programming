@@ -3,7 +3,6 @@
 from model_state import Base, State
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy.orm import desc
 import sys
 
 
@@ -19,7 +18,7 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     newstate = State(name='Louisiana')
     ses.add(newstate)
-    records = ses.query(State).order_by(desc(id)).first()
+    records = ses.query(State).filter_by(name='Louisiana').first()
     if records:
         print("{}".format(records.id))
     ses.commit()
