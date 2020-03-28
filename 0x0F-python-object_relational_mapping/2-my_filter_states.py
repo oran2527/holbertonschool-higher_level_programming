@@ -15,7 +15,7 @@ if __name__ == "__main__":
     cursorstr = """
 SELECT *
 FROM states
-WHERE states.name = '{value}'
+WHERE BINARY states.name = '{value}'
 ORDER BY states.id;
 """
     value = str(sys.argv[4])
