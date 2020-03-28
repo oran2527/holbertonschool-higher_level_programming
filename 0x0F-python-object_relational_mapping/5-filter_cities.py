@@ -13,9 +13,9 @@ if __name__ == "__main__":
 ", port=3306, user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
     cursor = db_connection.cursor()
     cursorstr = """
-SELECT name
+SELECT cities.name
 FROM cities
-WHERE BINARY state_id = (SELECT id FROM states WHERE BINARY name = '{value}')
+WHERE BINARY state_id = (SELECT states.id FROM states WHERE BINARY states.name = '{value}')
 ORDER BY cities.id;
 """
     value = str(sys.argv[4])
