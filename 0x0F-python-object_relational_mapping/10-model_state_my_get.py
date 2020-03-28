@@ -19,7 +19,7 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     records = ses.query(State).filter(State.name == s4).all()
     if records:
-        for record in records:    
+        for record in records:
             print("{}".format(record.id))
     else:
         print("Not found")
