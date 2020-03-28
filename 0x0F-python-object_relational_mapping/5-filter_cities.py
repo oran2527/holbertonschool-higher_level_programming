@@ -16,12 +16,12 @@ if __name__ == "__main__":
 SELECT cities.name
 FROM cities
 INNER JOIN states ON states.id = cities.state_id
-WHERE states.name = '{value}'
+WHERE states.name = %s
 ORDER BY cities.id;
 """
     value = str(sys.argv[4])
     cursorstr = cursorstr.format(value=value)
-    cursor.execute(cursorstr)
+    cursor.execute(cursorstr, (name,))
     myresult = cursor.fetchall()
     for y in range(0, len(myresult)):
         w = str(myresult[y])
