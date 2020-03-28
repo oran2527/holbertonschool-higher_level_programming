@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''Task 12 update name of id 2'''
+'''Task 13 delete a state'''
 from model_state import Base, State
 from sqlalchemy import (create_engine)
 from sqlalchemy.orm import sessionmaker
@@ -11,15 +11,12 @@ if __name__ == "__main__":
     s1 = sys.argv[1]
     s2 = sys.argv[2]
     s3 = sys.argv[3]
-    s4 = str(sys.argv[4])
     engine = create_engine(t.format(s1, s2, s3), pool_pre_ping=True)
     session = sessionmaker()
     session.configure(bind=engine)
     ses = session()
     Base.metadata.create_all(engine)
-    records = ses.query(states).filter(states.name == s4).all()
-    if records:
-        for record in records:
-            print("{}".format(record.id))
-    else:
-        print("Not found")
+    results = ses.query(State).filter(State.name.like('%a%')).all()
+    for x in results:
+        ses.delete(x)
+        ses.commit()
