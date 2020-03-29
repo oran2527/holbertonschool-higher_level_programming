@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''Task 14 select all cities with its state'''
+'''Task 16 select all cities with its state'''
 from model_state import Base, State
 from model_city import City
 from sqlalchemy import create_engine
@@ -22,26 +22,32 @@ if __name__ == "__main__":
     c = City.id
     d = City.name
     e = City.state_id
-    rs = ses.query(b, c, d).filter(b == e).order_by(b).order_by(c)
-    st = ses.query(b, a).all()
-    for w in st:
-        s = str(w[0])
+    rs = ses.query(a, b, c, d).filter(b == e).order_by(b).order_by(c)
+    list_st_id = []
+    for w in rs:
+        s = str(w[1])
         st_id = str(s.replace(",", "").replace("(", "").replace(")\
 ", "").replace("'", ""))
-        s = str(w[1])
-        st_name = str(s.replace(",", "").replace("(", "").replace(")\
+        list_st_id.append(st_id)
+    new_list = sorted(list(set(list_st_id)))
+    for x in new_list:
+        flag = 0
+        for w in rs:
+            s = str(w[0])
+            st_name = str(s.replace(",", "").replace("(", "").replace(")\
 ", "").replace("'", ""))
-        print("{}: {}".format(st_id, st_name))
-        for q in rs:
-            s = str(q[0])
-            s_id = str(s.replace(",", "").replace("(", "").replace(")\
+            s = str(w[1])
+            st_id = str(s.replace(",", "").replace("(", "").replace(")\
 ", "").replace("'", ""))
-            if st_id == s_id:
-                tab = "    "
-                s = str(q[1])
-                c_id = str(s.replace(",", "").replace("(", "").replace(")\
+            s = str(w[2])
+            c_id = str(s.replace(",", "").replace("(", "").replace(")\
 ", "").replace("'", ""))
-                s = str(q[2])
-                c_name = str(s.replace(",", "").replace("(", "").replace(")\
+            s = str(w[3])
+            c_name = str(s.replace(",", "").replace("(", "").replace(")\
 ", "").replace("'", ""))
+            tab = "    "
+            if x == st_id and flag == 0:
+                print("{}: {}".format(st_id, st_name))
+                flag = 1
+            if x == st_id:
                 print("{}{}: {}".format(tab, c_id, c_name))
