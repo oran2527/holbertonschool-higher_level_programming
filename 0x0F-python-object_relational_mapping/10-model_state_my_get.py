@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-'''Task 12 update name of id 2'''
+'''Task 10 search for a state with argument'''
 from model_state import Base, State
-from sqlalchemy import (create_engine)
+from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 import sys
 
@@ -17,7 +17,7 @@ if __name__ == "__main__":
     session.configure(bind=engine)
     ses = session()
     Base.metadata.create_all(engine)
-    records = ses.query(states).filter(states.name == s4).all()
+    records = ses.query(State).all()
     if records:
         for record in records:
             print("{}".format(record.id))
