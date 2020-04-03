@@ -6,13 +6,17 @@ from sqlalchemy.ext.declarative import declarative_base
 '''Base class'''
 from sqlalchemy.orm import relationship
 ''' relationship '''
-from model_city import City
+from relationship_city import Base, City
 ''' City class '''
 
-Base = declarative_base()
 
 class State(Base):
     '''State Class'''
     __tablename__ = 'states'
-    id = Column(Integer, primary_key=True, nullable=False)
-    name = Column(String(128), nullable=False)        
+    id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
+    name = Column(String(128), nullable=False)
+    cities = relationship(
+        "City",
+        cascade="all, delete-orphan",
+        backref="state",
+    )
