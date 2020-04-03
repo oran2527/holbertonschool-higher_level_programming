@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 '''Task 16 select all cities with its state'''
-from model_state import Base, State
-from model_city import City
+from relationship_state import State
+from relationship_city import City, Base
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 import sys
@@ -17,7 +17,7 @@ if __name__ == "__main__":
     session.configure(bind=engine)
     ses = session()
     Base.metadata.create_all(engine)
-    a = State.name
+    '''a = State.name
     b = State.id
     c = City.id
     d = City.name
@@ -50,4 +50,9 @@ if __name__ == "__main__":
                 print("{}: {}".format(st_id, st_name))
                 flag = 1
             if x == st_id:
-                print("{}{}: {}".format(tab, c_id, c_name))
+                print("{}{}: {}".format(tab, c_id, c_name))'''
+    cs = ses.query(State).order_by(State.id)
+    for css in cs:
+        print("{}: {}".format(css.id, css.name))
+        for cts in css.cities:
+            print("    {}: {}".format(cts.id, cts.name))
