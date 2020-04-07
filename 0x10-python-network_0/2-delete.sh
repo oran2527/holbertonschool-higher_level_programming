@@ -1,3 +1,3 @@
 #!/bin/bash
 # point 2 send delete method
-curl -X "DELETE" "$1"
+curl -sX "DELETE" "$1"
