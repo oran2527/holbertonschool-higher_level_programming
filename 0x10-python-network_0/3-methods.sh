@@ -1,3 +1,3 @@
 #!/bin/bash
 # show all methods in the server
-req="$(curl -sI -X OPTIONS 0.0.0.0:5000)"; mt=$(echo "$req" | grep Allow); echo "${mt/Allow: /}"
+curl -sI -X OPTIONS "$1" | grep -i Allow | cut --complement -d ' ' -f 1
