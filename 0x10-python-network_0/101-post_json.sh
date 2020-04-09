@@ -1,3 +1,3 @@
 #!/bin/bash
 # point 8 post json file
-curl -X POST -H "Content-Type: application/json" -d @"$2" "$1"
+curl -s -X POST -H "Content-Type: application/json" -d @"$2" "$1"
