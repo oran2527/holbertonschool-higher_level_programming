@@ -1,7 +1,7 @@
 #!/usr/bin/node
 let res = 1
 function fac (res, arg) {
-  if (arg > 1) {
+  if (arg || arg > 1) {
     res *= arg;
     fac (res, arg - 1);
   }
