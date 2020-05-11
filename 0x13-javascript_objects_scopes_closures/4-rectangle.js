@@ -7,11 +7,17 @@ class Rectangle {
     }
   }
 
-  print () {
+  print (c) {
+    let text = '';
+    if (c === undefined) {
+      text = 'X';
+    } else {
+      text = c;
+    }
     for (let i = 0; i < this.height; i++) {
       let conc = '';
       for (let j = 0; j < this.width; j++) {
-        conc += 'X';
+        conc += text;
       }
       console.log(conc);
     }
