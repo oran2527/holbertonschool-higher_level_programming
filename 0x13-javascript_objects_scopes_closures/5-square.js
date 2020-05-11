@@ -5,6 +5,8 @@ class Square extends Rectangle {
   constructor (size) {
     if (size > 0) {
       super(size, size);
+      this.width = size;
+      this.height = size;
     }
   }
 }
