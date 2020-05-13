@@ -2,7 +2,7 @@
 const request = require('request');
 const url = process.argv[2] + '?format=json';
 let count = 0;
-request(url, function (error, response) {
+request(url, function (error, response, body) {
   if (error) throw error;
   const info = JSON.parse(response.body);
   for (let i = 0; i < info.count; i++) {
