@@ -9,7 +9,7 @@ request(url, function (error, response) {
   for (const i in info.characters) {
     request2(info.characters[i], function (error2, response2) {
       if (error2) throw error2;
-      const info2 = JSON.parse(response2.body);      
+      const info2 = JSON.parse(response2.body);            
       list[list.length] = info2.name;            
     });
   }  
