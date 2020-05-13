@@ -7,7 +7,7 @@ request(url, function (error, response) {
   const info = JSON.parse(response.body);
   for (let i = 0; i < info.count; i++) {
     for (let j = 0; j < info.results[i].characters.length; j++) {
-      if (info.results[i].characters[j].endsWith('/18/')) {
+      if (info.results[i].characters[j].includes('/18/')) {
         count++;
       }
     }
